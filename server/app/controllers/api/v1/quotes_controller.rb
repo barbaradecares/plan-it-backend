@@ -33,6 +33,12 @@ class Api::V1::QuotesController < ApplicationController
     def current_quote
         @current_quote
     end
+
+    def my_quotes
+        @customer = Customer.find(params[:customer_id])
+        render json: @customer.quotes 
+    end
+
     
     def quote_params
         params.require(:quote).permit(:event_date, :customer_id, :vendor_id, :budget, :comments, :guestCount, :response, :status)
