@@ -19,6 +19,5 @@ Things you may want to cover:
 
 - Services (job queues, cache servers, search engines, etc.)
 
-- Deployment instructions - cd server - rails s to start server.
-
+- Deployment instructions : bundle install -> cd server -> rails db:migrate -> rails db:seed -> rails s
 - ...
