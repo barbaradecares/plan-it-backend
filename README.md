@@ -14,4 +14,4 @@ Ruby version - ruby 2.3.3-p222, Rails 5.2.1.1 application
 
 - Services (job queues, cache servers, search engines, etc.)
 
-- Deployment instructions - cd server - rails s to start server.
+- Deployment instructions : bundle install -> cd server -> rails db:migrate -> rails db:seed -> rails s
