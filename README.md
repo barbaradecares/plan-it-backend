@@ -1,17 +1,13 @@
 # plan-it-backend
 
-Ruby version - ruby 2.3.3-p222, Rails 5.2.1.1 application
+Single Page Application built with JavaScript.
 
-- System dependencies - faker data, PlanIt Frontend
+Rails API
+[Frontend](https://github.com/barbaradecares/plan-it-frontend) is built with HTML, CSS and JavaScript.
+Frontend communicates with the backend through making requests and receiving responses. All interactions between the client and the server are handled asynchronously.
 
-- Configuration - single page web application
+-one to many relationship between customer and Quotes and a one to many relationship between vendor and quotes. Quotes have many customers and vendors
 
-- Database creation - rails API using data from Faker
+-customers (Users) looking to host or advertise events can use or access the web application by logging in, browsing through available services and vendors, select services that apply and receive a quote. Vendors can create, update and view customer requests. Vendors can also send messages to customers on quote status. -Users can view, create, edit and update their profiles as needed as well make offers.
 
-- Database initialization - fetch data
-
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions : bundle install -> cd server -> rails db:migrate -> rails db:seed -> rails s
+Deployment - clone this repo and in the terminal type in 'open index.html' to start the app after deploying the backend
